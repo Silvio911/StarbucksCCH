@@ -30,6 +30,6 @@ struct ApiAddesses{
     static let placeSearchUrl = "place/textsearch/json?query="
     static let sensorKey = "&sensor=false&key="
     
-    //MARK:-This key can expire.
+    //MARK:-This key can expire && we have to delete it bcs it is a sensitive information xp.
     static let key = "AIzaSyCmhk7MY_Bh4t_Bd-G03FYW6qOEeQlfTfc"
 }
