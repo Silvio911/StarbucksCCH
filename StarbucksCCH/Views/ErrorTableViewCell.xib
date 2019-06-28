@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ErrorTableViewCell" rowHeight="321" id="KGk-i7-Jjw" customClass="ErrorTableViewCell" customModule="StarbucksCCH" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="320.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucksIcon" translatesAutoresizingMaskIntoConstraints="NO" id="K0A-Kz-DnX">
+                        <rect key="frame" x="110" y="110.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="K0A-Kz-DnX" secondAttribute="height" id="fEx-bm-YzR"/>
+                            <constraint firstAttribute="height" constant="100" id="lqr-on-SFP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkf-lD-bpU">
+                        <rect key="frame" x="32" y="226.5" width="256" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kkf-lD-bpU" secondAttribute="trailing" constant="32" id="F7P-sn-zGj"/>
+                    <constraint firstItem="kkf-lD-bpU" firstAttribute="top" secondItem="K0A-Kz-DnX" secondAttribute="bottom" constant="16" id="Kda-H8-AAd"/>
+                    <constraint firstItem="K0A-Kz-DnX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Wa6-I4-qd7"/>
+                    <constraint firstItem="kkf-lD-bpU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="aGQ-eV-EFW"/>
+                    <constraint firstItem="K0A-Kz-DnX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tqz-oO-3uO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-47.826086956521742" y="140.95982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="starbucksIcon" width="256" height="256"/>
+    </resources>
+</document>
